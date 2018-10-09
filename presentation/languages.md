@@ -7,6 +7,9 @@
 ## ------------------------------------ another year, another language
 
 
+![instruction](img/pic/eventoryOK.jpg)<!-- .element height="500" -->
+
+
 ![4programmers](img/pic/4programmers.png)
 4programmers.net
 
@@ -177,7 +180,6 @@ Konrad Zuse / Berlin 1941
 Zuse designed the first high level programming language
 
 But it was forgotten and did not really *played* an important role
-
 
 
 ## Next computers
@@ -419,6 +421,8 @@ defun fibonacci(n)
 
 ![lisp](img/pic/lisp_cycles.png)
 
+https://xkcd.com/297/
+
 
 # Reason 2
 
@@ -459,7 +463,7 @@ print(whole(fibo(10),0))
 
 # ALGOL
 
-Academic language of 60'
+Computer scientists language of 60'
 - ALGOL 58 better FORTRAN<!-- .element: class="fragment"-->
 - ALGOL 60<!-- .element: class="fragment"-->
 - ALGOL 68 great disaster<!-- .element: class="fragment"-->
@@ -476,7 +480,7 @@ Academic language of 60'
 - &#128540; lot of funny operators 
 
 
-![Algol 68keyboard](img/pic/algol68.png)
+![Algol 68keyboard](img/pic/algol68.png)<!-- .element width="1000" -->
 
 
 ![Teletype](img/pic/teletype.jpg)
@@ -493,10 +497,10 @@ Disappointment
 # meanwhile in a hardware
 
 
-![Core Mem](img/pic/coremem.jpeg)
+![Core Mem](img/pic/coremem.jpeg)<!-- .element width="1000" -->
 
 
-![Transistor](img/pic/transistor.jpg)
+![Transistor](img/pic/transistor.jpg)<!-- .element width="500" -->
 
 
 # Explosion of languages
@@ -753,32 +757,6 @@ XXXVII
 One of the first Esoteric Languages
 
 
-# and another not so esoteric
-
-
-```
-: fib
-  dup 2 <= if
-    drop 1
-  else
-    dup 1 - recurse
-    swap 2 - recurse +
-  then ;
-
-10 fib .
-```
-
-(from https://gist.github.com/marcoonroad/9e20d2cb56245ee303bd)
-
-
-## FORTH (1970)
-
-- it has nothing to do with FORTRAN
-- &#10084; structural
-- &#10084;  stack based
-- &#128540; high level machine code
-
-
 
 # meanwhile in a hardware
 
@@ -926,6 +904,9 @@ public class ArrayListTest {
 ![gratis](img/pic/gratis.jpg)
 
 
+![instruction](img/pic/eventoryOK.jpg)<!-- .element height="500" -->
+
+
 #  and now the most successful language ever
 
 
@@ -1011,6 +992,8 @@ console.log(h +w + z)
 - &#128169; too complex?<!-- .element: class="fragment"-->
 
 
+# &#10084;  No semicolons ! 
+
 
 # meanwhile in a hardware
 
@@ -1087,10 +1070,11 @@ quicksort (x:xs) =
 
  problem -> solution
 - opcode errors  -> asm 
-- GOTO spaghetti  -> C
+- GOTO spaghetti  -> C, Pascal
 - lack of encapsulation -> C++
-- dangling pointers  -> Java
-- nullpointerexception -> Kotlin 
+- dangling pointers  -> Java, C#
+- nullpointerexception -> Kotlin
+- mutability -> Scala, Haskell 
 - concurrency problems -> Rust
 
 
@@ -1124,7 +1108,7 @@ for your code<!-- .element: class="fragment"-->
 
 Less ceremony, just do it
 
-- Easier maths -> Fortran
+- simple maths -> Fortran
 - easier algorithms -> Algol
 - faster prototyping -> Visual Basic
 - data processing -> Python
@@ -1135,7 +1119,7 @@ Less ceremony, just do it
 - limited mem -> asm, cobol, fortran
 - faster cpu -> Pascal, C
 - more memory -> C++, Java
-- network /multicore -> Scala, Haskell     
+- network / multicore -> Scala, Haskell     
 
 
 ![cyclew](img/pic/teufelkreis.png)<!-- .element: height="500"-->
@@ -1200,7 +1184,7 @@ Or turn `zombies`
 Recent COBOL specification was released 2016
 
 
-There is still a lot of COBOLERs
+There are still a lots of COBOLERs
 
 
 ## What comes next?
@@ -1214,4 +1198,10 @@ There is still a lot of COBOLERs
  - privacy<!-- .element: class="fragment"--> 
 
 
-# tHE end
+# THE end
+
+
+![instruction](img/pic/eventoryOK.jpg)<!-- .element height="500" -->
+
+
+# THE end
