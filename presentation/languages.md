@@ -1,10 +1,14 @@
-# oh no!
-## another programming language
+## another year, another language
 
 
-# 4programmers.net
+![mail](img/pic/jdd_mail.png)
 
-//TODO pic
+
+## ------------------------------------ another year, another language
+
+
+![4programmers](img/pic/4programmers.png)
+4programmers.net
 
 
 # typical drama post 
@@ -15,14 +19,15 @@
 > Mam 32 lata, żonę i urodziło mi się dziecko (tzn nie urodziło się samo tylko zostało urodzone ściślej mówiąc), nie mam czasu na doszkalanie się oraz naukę nowych technologii. Co zrobić ze swoim życiem? Jak wskoczyć na pozycję bardziej menagerskie gdzie nie potrzeba ciągłej technicznej nauki?
 
 
-- why do always get new technologies ?
+- why do we always get new technologies?
 
-- why always new frameworks ?
+- why always new frameworks?
  
-- why do we have to learn new programming languages ?
+- why do we have to learn new programming languages?
 
-- who creates all those (niche) languages? 
-//TODO rethink
+- who creates all those crazy/niche languages? 
+
+- does it ever end? 
 
 
 ## remember your first programming language?
@@ -43,8 +48,8 @@
 
 - you know it well
 - you like it
-- you *dislike* other
-- you can do all you want in
+- you *dislike* the other
+- you can do all you want in it
 - you would do all in it
 
 
@@ -52,7 +57,7 @@
 
 
 ```
-> 99 bottles of beer on the wall, 99 bottles of beer.
+99 bottles of beer on the wall, 99 bottles of beer.
 Take one down and pass it around, 98 bottles of beer on the wall.
 
 98 bottles of beer on the wall, 98 bottles of beer.
@@ -122,7 +127,9 @@ first program ever?
 
 
 ```
- λn. n (λfab. (f b ((λmnfx. n f (m f x)) a b))) (λxy. x) (λfx. x) (λfx. f x)
+ λn. n (λfab.
+   (f b ((λmnfx. n f (m f x)) a b)))
+      (λxy. x) (λfx. x) (λfx. f x)
   
 ```
 <!--(lambda n. (n (lambda  f a b. (f b ((lambda m n f x. n f (m f x)) a b))) (lambda  x y. x) (lambda f x. x) (lambda f x. (f x)))) (lambda f x.(f (f x))) --->
@@ -139,13 +146,19 @@ first program ever?
 
 # λ - calculus 
 
- - actually a programming language
- - minimal (turing tar-pit) //TODO check
- - low level language of mathematics
- - needs no computer to run!
+- minimal formalism<!-- .element: class="fragment"  -->
+- low level language of mathematics<!-- .element: class="fragment"  -->
+- a programming language<!-- .element: class="fragment"  -->
+- turing tarpit <!-- .element: class="fragment"  -->
+- needs no computer to run!<!-- .element: class="fragment"  -->
 
 
-# back to metal
+![Hardware](img/pic/gears.jpg)<!-- .element height="400px" class="fragment"-->
+![Hardware](img/pic/spirit.jpeg)<!-- .element height="400px" class="fragment"-->
+
+
+
+# computers!
 
 
 ## Atanasoff-Berry Computer
@@ -161,10 +174,13 @@ first program ever?
 Konrad Zuse / Berlin 1941
 
 
-Zuse designed first high level programming language 
+Zuse designed the first high level programming language
+
+But it was forgotten and did not really *played* an important role
 
 
-## Next
+
+## Next computers
 
 - Colossus 1943
 - ENIAC 1945
@@ -176,16 +192,19 @@ Zuse designed first high level programming language
 
 # Programming
 
-//TODO put some switches
+![eniac programming](img/pic/eniac1.jpg)
 
 
-# modern example
+# modern example 
+
+eniac + 30 years (30 e.c.e)
 
 
 ```6502
 a2 0a 18 a0 00 a9 01 ca f0 08 84 fb a8 65 fb 4c 14 08  
 a8 a9 00 20 91 b3 20 dd bd a9 00 a0 01 20 1e ab 60
 ```
+
 - 6510<!-- .element: class="fragment" data-fragment-index="1" -->
 - Must be put in memory $080d<!-- .element: class="fragment" data-fragment-index="2" -->
 - f0 is a conditional branch<!-- .element: class="fragment" data-fragment-index="3" -->
@@ -197,11 +216,11 @@ a8 a9 00 20 91 b3 20 dd bd a9 00 a0 01 20 1e ab 60
 
 ## Machine code
 
-- Easy to learn
-- Conditional branches / loops are hard to calculate
-- Codes hard(?) to remember (150 opcodes on 6510, ?>4k on i7  )
-- mechanical/boring job
-- hard to program
+- &#10084;Simple to learn
+- &#128169; Conditional branches / loops are hard to calculate
+- &#128169; Codes hard(?) to remember (150 opcodes on 6510, ?>4k on i7  )
+- &#128169; mechanical/boring job
+- &#128169; hard to program
 
 
 # we need 
@@ -213,17 +232,17 @@ a8 a9 00 20 91 b3 20 dd bd a9 00 a0 01 20 1e ab 60
 ```asm
 tmp = $fb
 
-Start:ldx #10 ;  decimal!
+Start:   ldx #10 ;  decimal!
          clc
          ldy #$0
          lda #$1
-loop: dex
+loop:    dex
          beq end
          sty tmp
          tay
          adc tmp
          jmp loop
-end:  tay ; result is in Y - lets print it
+end:     tay ; result is in Y - lets print it
          lda #$00 
          jsr $B391 ; int to float
          jsr $bddd ; FAC to petscii
@@ -240,26 +259,17 @@ end:  tay ; result is in Y - lets print it
 For noobs that cannot remember machine codes
 
 
-# Reason #1
-
-Let compiler do automatic and boring job
- 
-So that we code faster
-
-//TODO pic (achievment)
-
-
 ## Assembly
 
-- As fast as machine code
-- Some minimal portability (!)
-- Registers
-- Arithmetic calculations
-- Comments needed (!)
+- 	&#10084; As fast as machine code
+- 	&#10084; Some minimal portability (!)
+- &#128169; Registers hell
+- &#128169; Arithmetic calculations
+- &#128169; Comments needed (!)
 
 
 
-# Meanwhile in hardware
+# meanwhile in a hardware
 
 
 ![mercury mem](img/pic/Mercury_memory.jpg)
@@ -317,11 +327,11 @@ from https://gist.github.com/wrathematics/ac621cd583c4b9e3b5eb
 
 ## FORTRAN
 
-- simple arithmetic
-- compiled to very fast code
-- funny `type system` *variables starting on I-N are INTEGER*<!-- .element: class="fragment" data-fragment-index="1" -->
-- GOTO hell
-- *scientific*
+- &#10084; simple arithmetic
+- &#10084; compiled to very fast code
+- &#128540; funny `type system` *variables starting on I-N are INTEGER*<!-- .element: class="fragment" data-fragment-index="1" -->
+- &#128169; GOTO hell
+- &#128540; *scientific*
 
 
 # Another programming language
@@ -364,17 +374,21 @@ from https://gist.github.com/wrathematics/ac621cd583c4b9e3b5eb
 
 # COBOL
 
-- fast code after compilation
-- reading as english (military version)
-- no need to comment
+- &#10084; fast code after compilation
+- &#10084; reading as english (military version)
+- &#10084; no need to comment
+- &#128169; ceremony (extreme)
 
 
-# Reason #2
 
-Make programming easier
+# Reason #1
+
+Automate boring stuff
+
+![faster](img/achievement/faster.jpg)<!-- .element: class="fragment"-->
 
 
-# Meanwhile in hardware
+# meanwhile in a hardware
 
 
 # Punch card driven
@@ -406,17 +420,21 @@ defun fibonacci(n)
 ![lisp](img/pic/lisp_cycles.png)
 
 
-# Reason 3
+# Reason 2
 
-- New(?) concept. 
-- New paradigm.
-- Elegance.
+- New(?) concept
+- New paradigm
+- Elegance
 
+![faster](img/achievement/smarter.jpg)<!-- .element: class="fragment"-->
 
-But we will not talk about LISP.
+But we will not talk about LISP
 
 
 # and again
+
+
+# another language
 
 
 ```
@@ -442,9 +460,9 @@ print(whole(fibo(10),0))
 # ALGOL
 
 Academic language of 60'
-- ALGOL 58 *better FORTRAN*
-- ALGOL 60
-- ALGOL 68 *great disaster*
+- ALGOL 58 better FORTRAN<!-- .element: class="fragment"-->
+- ALGOL 60<!-- .element: class="fragment"-->
+- ALGOL 68 great disaster<!-- .element: class="fragment"-->
 
 
 `Man or boy test` by Donald Knuth 
@@ -452,10 +470,10 @@ Academic language of 60'
 
 # ALGOL 68
 
-- way ahead of any language of that time
-- design by community
-- first design then implementation (few years later)
-- lot of funny operators 
+- &#10084; way ahead of any language of that time
+- &#128540; design by community
+- &#128540; first designed then implementated (few years later)
+- &#128540; lot of funny operators 
 
 
 ![Algol 68keyboard](img/pic/algol68.png)
@@ -472,19 +490,47 @@ Disappointment
 
 
 
-# Meanwhile in hardware
+# meanwhile in a hardware
 
 
 ![Core Mem](img/pic/coremem.jpeg)
 
 
-//TODO transistor
+![Transistor](img/pic/transistor.jpg)
 
 
-# Explosion
+# Explosion of languages
 
 
-## ALGOL W
+```
+RECORD PERSON (
+    STRING(20) NAME; 
+    INTEGER AGE; 
+    LOGICAL MALE; 
+    REFERENCE(PERSON) FATHER, MOTHER, YOUNGESTOFFSPRING, ELDERSIBLING
+);
+
+REFERENCE(PERSON) PROCEDURE YOUNGESTUNCLE (REFERENCE(PERSON) R);
+    BEGIN
+        REFERENCE(PERSON) P, M;
+        P := YOUNGESTOFFSPRING(FATHER(FATHER(R)));
+        WHILE (P ¬= NULL) AND (¬ MALE(P)) OR (P = FATHER(R)) DO
+            P := ELDERSIBLING(P);
+        M := YOUNGESTOFFSPRING(MOTHER(MOTHER(R)));
+        WHILE (M ¬= NULL) AND (¬ MALE(M)) DO
+            M := ELDERSIBLING(M);
+        IF P = NULL THEN 
+            M 
+        ELSE IF M = NULL THEN 
+            P 
+        ELSE 
+            IF AGE(P) < AGE(M) THEN P ELSE M
+    END
+
+```
+
+
+## ALGOL W (1966)
 
 - Niklaus Wirth and Tony Hoare
 
@@ -494,7 +540,8 @@ Disappointment
 `NULL` - I call it my billion-dollar mistake
 
 
-## BCPL  (1967)
+# and another programming language
+
 
 ```bcpl
 GET "libhdr"
@@ -510,9 +557,14 @@ AND fibonacci(n) = n<2 -> 1, fibonacci(n-1)+fibonacci(n-2)
 ```
 
 
-- only one type
-- language for os programming
-- hungarian notation 
+## BCPL  (1967)
+
+- &#128540; only one type
+- &#10084; language for os programming
+- &#128540; hungarian notation 
+
+
+# and another
 
 
 ```
@@ -527,10 +579,14 @@ AND fibonacci(n) = n<2 -> 1, fibonacci(n-1)+fibonacci(n-2)
 # BASIC (1964)
 
 
-- Programming for masses
-- interpreter
-- GOTO
-- uninitialized variables
+- &#10084; Programming for the masses
+- &#10084; interpreter
+- &#128169; GOTO everywhere
+- &#128169;  uninitialized variables
+
+
+
+# meanwhile in a hardware
 
 
 ![ram](img/pic/ram.jpg)
@@ -538,7 +594,8 @@ AND fibonacci(n) = n<2 -> 1, fibonacci(n-1)+fibonacci(n-2)
 
 ![8008](img/pic/Intel_8008.jpg)
 
-//TODO 8080
+
+![8080](img/pic/intel8080.jpg)
 
 
 ![Altair](img/pic/altair.jpg)
@@ -546,14 +603,15 @@ AND fibonacci(n) = n<2 -> 1, fibonacci(n-1)+fibonacci(n-2)
 # Altair 8800
 
 
-MS heroes//TODO
+![ms](img/pic/msheroes.jpg)
 
 
-# Everybody wanted basic
+## Everybody wanted basic
 
 
-# Commodore needs basic
-//TODO CBM logo
+## Commodore wanted basic
+
+![ms](img/pic/commodore.jpg)
 
 
 # The deal
@@ -567,11 +625,14 @@ Microsoft wanted $3 for each Commodore computer sold with BASIC in ROM
 (from https://tech.wp.pl/internet-commodore-i-atari-nie-powstalyby-bez-polakow-6035074860253825g/2)
 
 
-Microsoft got $25 000 for unlimited licence
-Commodore could include Microsoft BASIC with updates in all their machines based on 6502 processor
-//TODO recheck
+Microsoft got $25 000 for  perpetual licence for<!-- .element: class="fragment"--> 
 
-Commodore sold ~ 20 mln of C64 machines - and milions of others
+all Commodore 65xx based machines <!-- .element: class="fragment"--> 
+
+
+Commodore sold ~ 20 mln of C64 machines
+ 
+ and few millions of others
 
 
 Microsoft almost bankrupted
@@ -579,17 +640,16 @@ Microsoft almost bankrupted
 
 And angry Bill Gates put an easter egg in machine code...
 
-//TODO pet link
-
-
-And they have  learned how to make business
+[Commodore Pet](https://www.masswerk.at/pet/)
 
 
 # Era of BASIC 
 ## 1977-1995
 
 
-![Disjkstra](img/pic/Dijkstra.jpg)
+![Disjkstra](img/pic/Dijkstra.jpg)<!-- .element: height="500" --> 
+
+Edsger Dijkstra
 
 
 GOTO considered harmful
@@ -620,17 +680,19 @@ end;
 
 # Pascal (1970)
 
-- No more  GOTO errors
-- Variable declared
-- structural programming
+- &#10084; No more  GOTO errors
+- &#10084; Variables must be declared
+- &#10084; structural programming
 
 
-# Reason 4
+# Reason 3
 
 Prevent errors
 
+![no bugs](img/achievement/nobugs.jpg)<!-- .element: class="fragment"--> 
 
-# Structural programming
+
+## Structural programming
 
 Makes impossible  to create spaghetti code
 
@@ -654,6 +716,7 @@ If `GOTO` is bad...
 
 
 # yet another language
+
 
 ```
 XXXVII
@@ -690,21 +753,44 @@ XXXVII
 One of the first Esoteric Languages
 
 
-//todo forth
+# and another not so esoteric
 
 
-# meanwhile in hardware
+```
+: fib
+  dup 2 <= if
+    drop 1
+  else
+    dup 1 - recurse
+    swap 2 - recurse +
+  then ;
 
-//hard disk
+10 fib .
+```
+
+(from https://gist.github.com/marcoonroad/9e20d2cb56245ee303bd)
+
+
+## FORTH (1970)
+
+- it has nothing to do with FORTRAN
+- &#10084; structural
+- &#10084;  stack based
+- &#128540; high level machine code
+
+
+
+# meanwhile in a hardware
+
+![harddisk](img/pic/harddisk.jpeg)
+
 
 # and another programming language
 
-```c
 
-/* C implementation QuickSort */
+```c
 #include<stdio.h> 
-  
-// A utility function to swap two elements 
+   
 void swap(int* a, int* b) 
 { 
     int t = *a; 
@@ -712,11 +798,6 @@ void swap(int* a, int* b)
     *b = t; 
 } 
   
-/* This function takes last element as pivot, places 
-   the pivot element at its correct position in sorted 
-    array, and places all smaller (smaller than pivot) 
-   to left of pivot and all greater elements to right 
-   of pivot */
 int partition (int arr[], int low, int high) 
 { 
     int pivot = arr[high];    // pivot 
@@ -724,8 +805,6 @@ int partition (int arr[], int low, int high)
   
     for (int j = low; j <= high- 1; j++) 
     { 
-        // If current element is smaller than or 
-        // equal to pivot 
         if (arr[j] <= pivot) 
         { 
             i++;    // increment index of smaller element 
@@ -736,20 +815,13 @@ int partition (int arr[], int low, int high)
     return (i + 1); 
 } 
   
-/* The main function that implements QuickSort 
- arr[] --> Array to be sorted, 
-  low  --> Starting index, 
-  high  --> Ending index */
 void quickSort(int arr[], int low, int high) 
 { 
     if (low < high) 
     { 
-        /* pi is partitioning index, arr[p] is now 
-           at right place */
+
         int pi = partition(arr, low, high); 
   
-        // Separately sort elements before 
-        // partition and after partition 
         quickSort(arr, low, pi - 1); 
         quickSort(arr, pi + 1, high); 
     } 
@@ -759,24 +831,22 @@ void quickSort(int arr[], int low, int high)
 from https://www.geeksforgeeks.org/quick-sort/
  
 
-# C (1969)
 
-- Better os programing support
-- better low level hardware use
-- mixes easily with assembly
-- (void*) - and where is your type now
-- life is too short for malloc
-- limited encapsulation
-- verbose
+## C (1969)
+
+- &#10084; os programing support(`*`)
+- &#10084; easy low level hardware use
+- &#10084; mixes easily with assembly
+- &#10084; portabilty
+- &#128169;  (void*) - and where is your type now
+- &#128169;  life is too short for malloc
+- &#128169;  limited (unfriendly) encapsulation
+
 
 # so another language
 
 
 ```
-#include <iostream>     // std::cout
-#include <algorithm>    // std::sort
-#include <vector>       // std::vector
-
 bool myfunction (int i,int j) { return (i<j); }
 
 struct myclass {
@@ -787,53 +857,77 @@ int main () {
   int myints[] = {32,71,12,45,26,80,53,33};
   std::vector<int> myvector (myints, myints+8);               // 32 71 12 45 26 80 53 33
 
-  // using default comparison (operator <):
-  std::sort (myvector.begin(), myvector.begin()+4);           //(12 32 45 71)26 80 53 33
+  std::sort (myvector.begin(), myvector.begin()+4, myfunc);           //(12 32 45 71)26 80 53 33
 
   return 0;
 }
 
 ```
 
-
 from http://www.cplusplus.com/reference/algorithm/sort/
 
 
-# C++
+## C++
 
-- object oriented programming
-- provide encapsulation
-- better modularization
-- life is too short for ~~malloc~~  new/delete
-- operators overloading hell
-- meta-programming
-- portability
-- security
-
-
-# meanwhile in hardware
-
-//TODO network
+- &#10084; object oriented programming
+- &#10084; provides encapsulation
+- &#10084; better modularization
+- &#128169;  life is too short for ~~malloc~~  new/delete
+- &#128169;  operators overloading hell
+- &#128540; meta-programming
+- &#128169; weak security
 
 
-# Java / `C#`
+
+# meanwhile in a hardware
+
+
+![network](img/pic/network.jpeg)
+
+
+```
+public class ArrayListTest {
+    public static void main(String[] args) {
+        Vector lst = new Vector();
+        lst.add("alpha");
+        lst.add("beta");
+        lst.add("charlie");
+        System.out.println(lst);
+
+        Enumeration el = lst.elements();
+        while (el.hasMoreElements()) {
+            Object obj = el.nextElement();
+            if ( obj instanceof String) {
+               String str = (String)
+               System.out.println(str);
+            }
+        }
+    }
+}
+
+```
+
+
+## Java (1996)
  
- - break with C compatibility
- - portability 
- - garbage collection
- - great standard library
- - security
- - better multithreading
+ - &#128540; breaks with C compatibility
+ - &#10084; keeps similar syntax
+ - &#10084; great portability  (jvm)
+ - &#10084; garbage collection
+ - &#10084; great standard library
+ - &#10084; security
+ - &#10084; better multithreading
+ - &#128169; try to code in  Java 1.2 for a one day
+ 
 
-# Reason 5
+
+# Reason 4
 
 ![gratis](img/pic/gratis.jpg)
 
 
-//TODO kto robi te wszystkie niczowe języki
+#  and now the most successful language ever
 
-
-#  and now the most sucessful language ever
 
 ```
 [][(![]+[])[+[]]+([![]]+[][[]])[+!+[]+[+[]]]+(![]+[])[!+[]+!+[]]+(!![]+[])[+[]]+
@@ -852,168 +946,200 @@ from http://www.cplusplus.com/reference/algorithm/sort/
 
 ```
 
-//TODO Bernard Eich picture
+
+![BE](img/pic/eich.png)
 
 
-# JavaScript
+## JavaScript (1995)
 
- - ECMA
- - LISPy in core
- - ugly in details/ bad parts
- - Dynamicly typed
- - wasted chance
-
-
-# Reason 6
-
-Niche.
+ - &#10084; LISPy in core
+ - &#128169; ugly in details/ bad parts
+ - &#128540; Dynamicly typed
+ - &#128169; wasted chance
 
 
-# Types
+# Reason 5
 
-Scripting languages vs Compiled languages
-Dynamicly typed vs Staticly typed
-Strongly typed vs Weakly typed
+Niche
 
-//TODO types twitts
+![coffee](img/achievement/coffee.jpg)<!-- .element: class="fragment"--> 
 
+
+
+# Types of languages
+
+
+## types
+
+- scripting languages vs compiled languages<!-- .element: class="fragment"--> 
+- dynamically typed vs statically typed<!-- .element: class="fragment"--> 
+- strongly typed vs weakly typed<!-- .element: class="fragment"--> 
+
+
+![types](img/pic/librarytp.png)
+
+
+![types](img/pic/tpes.png)
+
+
+![quality](img/pic/types.png)<!-- .element: height="500"-->
+ 
 Less types more tests
-//TODO picture
 
 
 # Is there anything better?
 
 
-//TODO put scala
 ```
 var h = "Hello, "
-var w = World!"
-var z = h.length() + w.length()
-console.log(h +w + z)
-
-```
-
-# Scala
-
-- FP , OOP hybrid
-- type inference
-- favors immutability
-- comnpiles to JVM
-- comnpiles to JS
-- compiles to llvm (`*`)
-- strongly typed without verbosity
-- complex
-- too complex?
-
-
-#  and another language
-
-```
-var h = "Hello, "
-var w = World!"
+var w = "World!"
 var z = h.length() + w.length()
 console.log(h +w + z)
 
 ```
 
 
-# TypeScript
+## Scala (2003)
 
-- Compiles to JS
-- staticly typed
-- but weakly (`*`)
-
-
-# Meanhile in hardware
-
-//TODO multicore
-
-
-//TODO put haskell
-
-# Haskell
-
-Academic...?
+- &#10084; FP, OOP hybrid<!-- .element: class="fragment"--> 
+- &#10084;  type inference<!-- .element: class="fragment"--> 
+- &#10084; favors immutability<!-- .element: class="fragment"--> 
+- &#10084;  compiles to JVM<!-- .element: class="fragment"--> 
+- &#10084;  compiles to JS<!-- .element: class="fragment"--> 
+- &#10084;  strongly/statically typed without verbosity<!-- .element: class="fragment"--> 
+- &#128169; complex<!-- .element: class="fragment"--> 
+- &#128169; too complex?<!-- .element: class="fragment"-->
 
 
-# Not tolked about
 
-- Clojure
-- Scheme
-- Kotlin
-- Swift
-- Prolog
-- Python
-- Rust
-- .. 
- 
- 
+# meanwhile in a hardware
+
+
+![multicore](img/pic/multicore.jpg)
+
+
+# another language
+
+
+```
+quicksort :: (Ord a) => [a] -> [a]  
+quicksort [] = []  
+quicksort (x:xs) =   
+    let smallerSorted = quicksort [a | a <- xs, a <= x]  
+        biggerSorted = quicksort [a | a <- xs, a > x]  
+    in  smallerSorted ++ [x] ++ biggerSorted  l
+
+```
+
+
+# Haskell (1990)
+
+ - &#10084;  functional
+ - &#10084; pure (almost)
+ - &#128540; libraries and tools
+
+
+
+#  JVM  languages 
+
+
+## java problems (as of 2018)
+
+- ceremony
+- limited functional programming (mutability everywhere)
+- simple type system / limited generics
+- cluttered, frankenstein
+
+
+#  Alternative JVM Languages 
+
+- groovy (powerful, no ceremony, fp)<!-- .element: class="fragment"-->
+- clojure (lisp, fp)<!-- .element: class="fragment"-->
+- scala (everything :-) )<!-- .element: class="fragment"-->
+- kotlin (scala--  \/ java++)<!-- .element: class="fragment"-->
+- eta (haskell)<!-- .element: class="fragment"-->
+
+
+
 # what do you think about yet another language?
- 
+
+
    
 ## Language
 
  - syntax
- - semantics
- - library
- - community *!*
+ - semantics<!-- .element: class="fragment"--> 
+ - library<!-- .element: class="fragment"-->
+ - tools<!-- .element: class="fragment"-->  
+ - community!<!-- .element: class="fragment"--> 
 
 
+## Reasons for new languages
 
 
-
-# Evolution network
-
-<div class="langNetwork" />
-
-
-//TODO co jest szybsze?
-
-# Towards bug free
-
- - opcode errors  -> asm 
- - GOTO spaghetti  -> C
- - lack of encapsulation -> C++
- - memory leaks -> Java
- - nullpointerexception -> Kotlin 
- - concurenncy problems -> Rust
+- productivity
+- hardware
+- ideas
+- bugs prevention 
 
 
-# end of privacy
+# Less bugs
 
-for your code
+ problem -> solution
+- opcode errors  -> asm 
+- GOTO spaghetti  -> C
+- lack of encapsulation -> C++
+- dangling pointers  -> Java
+- nullpointerexception -> Kotlin 
+- concurrency problems -> Rust
 
 
-Comopilers want to know more.
+end of privacy
 
-malloc() - just function call
-new A(); - you allocate object
-
+for your code<!-- .element: class="fragment"--> 
 
 
-# Better productivity
+## Compiler wants to know more
+
+`malloc()` - just function call in **C**
+
+`new A()` - you allocate object in **Java**
+
+
+## Compiler wants to know more
+
+`Semaphore.lock()` - just a method call in **C++**
+
+`synchronized( ){` - you declare critical section in **Java**
+
+
+## Compiler wants to know more
+
+`public String s` -  shared variable in **Java**
+
+`let mut s = String::from("hello");` - you control  borrowing in **Rust**
+
+
+## Better productivity
+
+Less ceremony, just do it
 
 - Easier maths -> Fortran
 - easier algorithms -> Algol
 - faster prototyping -> Visual Basic
 - data processing -> Python
 
-# New hardware posibilities
 
-- limted mem -> asm, cobol, fortran
+## Hardware possibilities
+
+- limited mem -> asm, cobol, fortran
 - faster cpu -> Pascal, C
-- nore memory -> C++, Java
+- more memory -> C++, Java
 - network /multicore -> Scala, Haskell     
 
 
-If you use new hardware, and new language possibilites...
+![cyclew](img/pic/teufelkreis.png)<!-- .element: height="500"-->
 
-You wil have new types of bugs that are hard to even imagine now.
-
-And You will need:
- 
-
-# yet another language
 
 
 # For You
@@ -1021,80 +1147,71 @@ And You will need:
 Languages are there not to destroy your life
 
 
-# Master one language well
-
-# Read and understand languages you work with
+## Language changes the way you think
 
 
-I mean You don't know JavaScript
+```
+//A piece of smart code in Players should reduce both methods code duplication
+    private Tuple2<Ball, Players> bouncePlayer1(final Players players, final Random rnd) {
+        if (this.x < 0 && speed.x < 0) {
+            if (isTouchingPaddle(players.player1.paddle, this.y)) {
+                return Tuple.of(new Ball(0f, this.y, this.speed.bounceX()), players);
+            } else {
+                return Tuple.of(Ball.randomDirection(rnd), players.mapPlayer(2, pl2 -> pl2.score()));
+            }
+        }
+        return Tuple.of(this, players);
+    }
+
+    private Tuple2<Ball, Players> bouncePlayer2(final Players players, final Random rnd) {
+        if (this.x > 1.0f && speed.x > 0) {
+            if (isTouchingPaddle(players.player2.paddle, this.y)) {
+                return Tuple.of(new Ball(1f, this.y, this.speed.bounceX()), players);
+            } else {
+                return Tuple.of(Ball.randomDirection(rnd), players.mapPlayer(1, pl1 -> pl1.score()));
+            }
+        }
+        return Tuple.of(this, players);
+    }
+```    
 
 
-# Try different ones
-
-C# / Java - try Haskell
-C / Pascal - try Java/ C#
-Haskell/Ocaml - try Rust
-Scala - try Clojure
-Javascript - Scala (or asm)
-
-# Really different
-
-PROLOG
-Rust
-Clojure
-
-# Language changes the way you think
-
-//TODO example ???
-
-# Be brave
+## Be brave
  
  In your companies you do:
   - prototypes,
-  - dev tools,
+  - dev/build/report tools,
   - hackatons
   - trainings
 
 
-# Dead languages
+## Don't be afraid of 
 
-Languages never die - they only fade away.
+
+## Dead languages
+
+
+Languages never die - they only fade away
 
 
 Or turn `zombies`
 
 
-Last COBOL specification was released 2016
+Recent COBOL specification was released 2016
 
 
-There is still a lot of COBOLERs.
+There is still a lot of COBOLERs
 
 
-# What is next?
+## What comes next?
 
- - AI
- - 256 cores
- - more GPU
- - FPGAs?
- - IOT
- - security
- - privacy
- 
- 
-  
- # Why don't we programm Haskell?
- 
- 
- Industry likes small steps
- 
- 
- - C 
- - C++
- - Java/C#
- - Scala/F#
- - ~~Scala/F#~~
- - Kotlin ??  
- 
- 
- 
- 
+ - AI<!-- .element: class="fragment"--> 
+ - 256 cores<!-- .element: class="fragment"--> 
+ - more GPU<!-- .element: class="fragment"--> 
+ - FPGAs?<!-- .element: class="fragment"--> 
+ - IOT<!-- .element: class="fragment"--> 
+ - security<!-- .element: class="fragment"--> 
+ - privacy<!-- .element: class="fragment"--> 
+
+
+# tHE end

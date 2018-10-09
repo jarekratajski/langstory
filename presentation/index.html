@@ -27,26 +27,11 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>
-					<ul>
-						<li>why new languages</li>
-						<li>start from  ada - first machine</li>
-						<li>show esoteric</li>
-						<li>show graph</li>
-					</ul>
-				</section>
-				<!--section data-state="langNetwork" class="langNetwork">
-					<div id="mynetwork" >
-
-					</div>
-				</section-->
-
 				<section data-markdown="languages.md"
 						 data-separator="^\n\n\n"
 						 data-separator-vertical="^\n\n"
 						 data-separator-notes="^Note:"
 						 data-charset="UTF-8">
-
 				</section>
 			</div>
 		</div>
@@ -55,7 +40,13 @@
 		<script src="bower_components/vis/dist/vis-network.min.js"></script>
 		<script src="js/reveal.js"></script>
 		<script src="js/langs.js"></script>
-
+		<script>
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
 		<script>
 			// More info about config & dependencies:
 			// - https://github.com/hakimel/reveal.js#configuration

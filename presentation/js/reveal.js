@@ -4784,9 +4784,12 @@
 
 			// Assume true and try to prove false
 			triggered = true;
-
+            console.log(event.keyCode);
 			switch( event.keyCode ) {
+
 				// p, page up
+					//changed by jarek
+				/*
 				case 80: case 33: navigatePrev(); break;
 				// n, page down
 				case 78: case 34: navigateNext(); break;
@@ -4798,6 +4801,19 @@
 				case 75: case 38: navigateUp(); break;
 				// j, down
 				case 74: case 40: navigateDown(); break;
+				*/
+                case 80: case 33: navigatePrev(); break;
+                // n, page down
+                case 78: case 34: navigateNext(); break;
+                // h, left
+                case 72: case 37: navigateUp(); break;
+                // l, right
+                case 76: case 39: navigateDown(); break;
+                // k, up
+                case 75: case 38: navigateLeft(); break;
+                // j, down
+                case 74: case 40: navigateRight(); break;
+
 				// home
 				case 36: slide( 0 ); break;
 				// end
