@@ -1,25 +1,20 @@
 ## another year, another language
 
 
-![mail](img/pic/jdd_mail.png)
-
-
-## ------------------------------------ another year, another language
-
-
-![instruction](img/pic/eventoryOK.jpg)<!-- .element height="500" -->
-
 
 ![4programmers](img/pic/4programmers.png)
 4programmers.net
 
 
+
 # typical drama post 
 
-(2-4 each month)
+(more in summer)
+
 
 
 > Mam 32 lata, żonę i urodziło mi się dziecko (tzn nie urodziło się samo tylko zostało urodzone ściślej mówiąc), nie mam czasu na doszkalanie się oraz naukę nowych technologii. Co zrobić ze swoim życiem? Jak wskoczyć na pozycję bardziej menagerskie gdzie nie potrzeba ciągłej technicznej nauki?
+
 
 
 - why do we always get new technologies?
@@ -33,7 +28,9 @@
 - does it ever end? 
 
 
+
 ## remember your first programming language?
+
 
 
 ```basic
@@ -44,19 +41,26 @@
 ```
 
 
-## and your favourite language?
+
+## and your favourite language now?
+
 
 
 ## your favourite language
+
+
 
 - you know it well
 - you like it
 - you *dislike* the other
 - you can do all you want in it
-- you would do all in it
+- you would do everything with it
+
 
 
 ![php](img/memese/php.jpg)
+
+
 
 
 ```
@@ -83,13 +87,16 @@ song in 1500 different programming languages ...
 
 
 
-# let's talk about hardware
+# let's start with hardware
+
 
 
 # first computers
 
 
+
 ![analitical engine](img/pic/analiticalEngine.jpg)<!-- .element class="smaller" -->
+
 
 
 ## Analitical engine
@@ -98,6 +105,8 @@ Designed in 1837+ by Charles Babbage
 - first  planned computer 
 - mechanical 
 - not finished
+
+
 
 
 ```
@@ -120,54 +129,20 @@ CB?11
 first program ever?
 
 
+
 ![ada](img/pic/ada.jpg)
 
 
-![different](img/pic/different.jpg)
 
+# first computers!
 
-# programming language
-
-
-```
- λn. n (λfab.
-   (f b ((λmnfx. n f (m f x)) a b)))
-      (λxy. x) (λfx. x) (λfx. f x)
-  
-```
-<!--(lambda n. (n (lambda  f a b. (f b ((lambda m n f x. n f (m f x)) a b))) (lambda  x y. x) (lambda f x. x) (lambda f x. (f x)))) (lambda f x.(f (f x))) --->
-
-
-## Lambda calculus
-
-1930 Church
-
-- x
-- (λx.M)
-- (M N)
-
-
-# λ - calculus 
-
-- minimal formalism<!-- .element: class="fragment"  -->
-- low level language of mathematics<!-- .element: class="fragment"  -->
-- a programming language<!-- .element: class="fragment"  -->
-- turing tarpit <!-- .element: class="fragment"  -->
-- needs no computer to run!<!-- .element: class="fragment"  -->
-
-
-![Hardware](img/pic/gears.jpg)<!-- .element height="400px" class="fragment"-->
-![Hardware](img/pic/spirit.jpeg)<!-- .element height="400px" class="fragment"-->
-
-
-
-# computers!
 
 
 ## Atanasoff-Berry Computer
 ![ABC computer](img/pic/abc.jpg)<!-- .element class="smallPic" -->
 
 1939!
+
 
 
 ## Z3 Electromechanical 
@@ -177,9 +152,11 @@ first program ever?
 Konrad Zuse / Berlin 1941
 
 
+
 Zuse designed the first high level programming language
 
 But it was forgotten and did not really *played* an important role
+
 
 
 ## Next computers
@@ -197,9 +174,11 @@ But it was forgotten and did not really *played* an important role
 ![eniac programming](img/pic/eniac1.jpg)
 
 
+
 # modern example 
 
-eniac + 30 years (30 e.c.e)
+eniac + ~30 years
+
 
 
 ```6502
@@ -213,22 +192,27 @@ a8 a9 00 20 91 b3 20 dd bd a9 00 a0 01 20 1e ab 60
 - 4c is an unconditional jump<!-- .element: class="fragment" data-fragment-index="4" -->
 
 
-## Machine code
-
 
 ## Machine code
 
-- &#10084;Simple to learn
+
+
+## Machine code
+
+- &#10084; Simple to learn
 - &#128169; Conditional branches / loops are hard to calculate
-- &#128169; Codes hard(?) to remember (150 opcodes on 6510, ?>4k on i7  )
-- &#128169; mechanical/boring job
+- &#128169; Hard(?) to remember opcodes (150 opcodes on 6510, \>4k opcodes on i7!  )
+- &#128169; coding assembly == lots of mechanical/boring job
 - &#128169; hard to program
+
 
 
 # we need 
 
 
+
 # another programming language
+
 
 
 ```asm
@@ -255,10 +239,13 @@ end:     tay ; result is in Y - lets print it
 ``` 
 
 
+
 ## Assembly (1949)
 
 
+
 For noobs that cannot remember machine codes
+
 
 
 ## Assembly
@@ -274,10 +261,13 @@ For noobs that cannot remember machine codes
 # meanwhile in a hardware
 
 
+
 ![mercury mem](img/pic/Mercury_memory.jpg)
 
 
+
 # Another programming language
+
 
 
 ```
@@ -320,26 +310,30 @@ For noobs that cannot remember machine codes
       CALL FIB(N)
       END
 ```
+https://gist.github.com/wrathematics/ac621cd583c4b9e3b5eb
 
-from https://gist.github.com/wrathematics/ac621cd583c4b9e3b5eb
 
 
 ## FORTRAN (1957)
+
 
 
 ## FORTRAN
 
 - &#10084; simple arithmetic
 - &#10084; compiled to very fast code
-- &#128540; funny `type system` *variables starting on I-N are INTEGER*<!-- .element: class="fragment" data-fragment-index="1" -->
+- &#128540; funny `type system` *variables starting on I-N are INTEGER*  other are FLOAT `¯\_(ツ)_/¯`
 - &#128169; GOTO hell
 - &#128540; *scientific*
+
 
 
 # Another programming language
 
 
+
 ![Grace Hopper](/img/pic/grace_hopper.jpg)
+
 
 
 ```
@@ -371,15 +365,17 @@ from https://gist.github.com/wrathematics/ac621cd583c4b9e3b5eb
 ```
 
 
+
 # COBOL (1959)
+
 
 
 # COBOL
 
 - &#10084; fast code after compilation
-- &#10084; reading as english (military version)
+- &#10084; reads as english
 - &#10084; no need to comment
-- &#128169; ceremony (extreme)
+- &#128169; extreme ceremony
 
 
 
@@ -390,21 +386,25 @@ Automate boring stuff
 ![faster](img/achievement/faster.jpg)<!-- .element: class="fragment"-->
 
 
+
 # meanwhile in a hardware
 
 
-# Punch card driven
 
 ![punch card](img/pic/punchcard.jpg)
+
 
 
 ![vacuum tube](img/pic/vacuumtube.jpg)
 
 
+
 Guess what? 
 
 
+
 # ... another language
+
 
 
 ```
@@ -416,29 +416,31 @@ defun fibonacci(n)
 ```
 
 
+
 # LISP (1958)
 
 
-![lisp](img/pic/lisp_cycles.png)
+
+![lisp](img/pic/lisp_cycles.png)<!-- .element: height="500" --> 
 
 https://xkcd.com/297/
 
 
+
 # Reason 2
 
-- New(?) concept
 - New paradigm
-- Elegance
 
 ![faster](img/achievement/smarter.jpg)<!-- .element: class="fragment"-->
+
+
 
 But we will not talk about LISP
 
 
-# and again
-
 
 # another language
+
 
 
 ```
@@ -458,7 +460,9 @@ print(whole(fibo(10),0))
 ```
 
 
+
 # ALGOL (1958)
+
 
 
 # ALGOL
@@ -469,18 +473,26 @@ Computer scientists language of 60'
 - ALGOL 68 great disaster<!-- .element: class="fragment"-->
 
 
+
+Recursion !
+
 `Man or boy test` by Donald Knuth 
+
 
 
 # ALGOL 68
 
 - &#10084; way ahead of any language of that time
 - &#128540; design by community
-- &#128540; first designed then implementated (few years later)
+- &#128540; first designed then implemented (it took few years)
 - &#128540; lot of funny operators 
 
 
+
 ![Algol 68keyboard](img/pic/algol68.png)<!-- .element width="1000" -->
+
+algol keyboard
+
 
 
 ![Teletype](img/pic/teletype.jpg)
@@ -488,22 +500,26 @@ Computer scientists language of 60'
 Reality
 
 
+
 ![Disappointment](img/pic/disappointment.gif)
 
-Disappointment
 
 
 
 # meanwhile in a hardware
 
 
+
 ![Core Mem](img/pic/coremem.jpeg)<!-- .element width="1000" -->
+
 
 
 ![Transistor](img/pic/transistor.jpg)<!-- .element width="500" -->
 
 
+
 # Explosion of languages
+
 
 
 ```
@@ -534,9 +550,12 @@ REFERENCE(PERSON) PROCEDURE YOUNGESTUNCLE (REFERENCE(PERSON) R);
 ```
 
 
+
 ## ALGOL W (1966)
 
 - Niklaus Wirth and Tony Hoare
+
+
 
 
 ![hoare](img/pic/hoare.jpg)
@@ -544,7 +563,9 @@ REFERENCE(PERSON) PROCEDURE YOUNGESTUNCLE (REFERENCE(PERSON) R);
 `NULL` - I call it my billion-dollar mistake
 
 
+
 # and another programming language
+
 
 
 ```bcpl
@@ -561,14 +582,17 @@ AND fibonacci(n) = n<2 -> 1, fibonacci(n-1)+fibonacci(n-2)
 ```
 
 
+
 ## BCPL  (1967)
 
-- &#128540; only one type
+- &#128540; only one type 
 - &#10084; language for os programming
 - &#128540; hungarian notation 
 
 
+
 # and another
+
 
 
 ```
@@ -580,8 +604,11 @@ AND fibonacci(n) = n<2 -> 1, fibonacci(n-1)+fibonacci(n-2)
 ```
 
 
+
 # BASIC (1964)
 
+
+# BASIC 
 
 - &#10084; Programming for the masses
 - &#10084; interpreter
@@ -593,13 +620,17 @@ AND fibonacci(n) = n<2 -> 1, fibonacci(n-1)+fibonacci(n-2)
 # meanwhile in a hardware
 
 
+
 ![ram](img/pic/ram.jpg)
+
 
 
 ![8008](img/pic/Intel_8008.jpg)
 
 
+
 ![8080](img/pic/intel8080.jpg)
+
 
 
 ![Altair](img/pic/altair.jpg)
@@ -607,10 +638,13 @@ AND fibonacci(n) = n<2 -> 1, fibonacci(n-1)+fibonacci(n-2)
 # Altair 8800
 
 
+
 ![ms](img/pic/msheroes.jpg)
 
 
-## Everybody wanted basic
+
+## Everybody BASIC
+
 
 
 ## Commodore wanted basic
@@ -618,15 +652,18 @@ AND fibonacci(n) = n<2 -> 1, fibonacci(n-1)+fibonacci(n-2)
 ![ms](img/pic/commodore.jpg)
 
 
+
 # The deal
 
 Microsoft wanted $3 for each Commodore computer sold with BASIC in ROM
 
 
-![Bill](img/pic/bgates.jpg)<!-- .element width="200px"-->
-![Jack](img/pic/tramiel.jpeg)<!-- .element width="300px"-->
+
+![Bill](img/pic/bgates.jpg)<!-- .element height="400px"-->
+![Jack](img/pic/tramiel.jpeg)<!-- .element height="400px"-->
 
 (from https://tech.wp.pl/internet-commodore-i-atari-nie-powstalyby-bez-polakow-6035074860253825g/2)
+
 
 
 Microsoft got $25 000 for  perpetual licence for<!-- .element: class="fragment"--> 
@@ -634,21 +671,22 @@ Microsoft got $25 000 for  perpetual licence for<!-- .element: class="fragment"-
 all Commodore 65xx based machines <!-- .element: class="fragment"--> 
 
 
+
 Commodore sold ~ 20 mln of C64 machines
  
  and few millions of others
 
 
-Microsoft almost bankrupted
 
-
-And angry Bill Gates put an easter egg in machine code...
+Angry Bill Gates inserted an easter egg in machine code...
 
 [Commodore Pet](https://www.masswerk.at/pet/)
 
 
+
 # Era of BASIC 
 ## 1977-1995
+
 
 
 ![Disjkstra](img/pic/Dijkstra.jpg)<!-- .element: height="500" --> 
@@ -656,15 +694,19 @@ And angry Bill Gates put an easter egg in machine code...
 Edsger Dijkstra
 
 
+
 GOTO considered harmful
 
-(WTF?)<!-- .element: class="fragment" data-fragment-index="1" --> 
+(WTF? `(＠_＠)`) 
+
 
 
 ![Spaghetti](img/pic/spaghetti.jpg)
 
 
+
 # another programming language?
+
 
 
 ```
@@ -682,11 +724,13 @@ end;
 ```
 
 
+
 # Pascal (1970)
 
-- &#10084; No more  GOTO errors
+- &#10084; No more  GOTO
 - &#10084; Variables must be declared
 - &#10084; structural programming
+
 
 
 # Reason 3
@@ -696,17 +740,21 @@ Prevent errors
 ![no bugs](img/achievement/nobugs.jpg)<!-- .element: class="fragment"--> 
 
 
+
 ## Structural programming
 
 Makes impossible  to create spaghetti code
 
 
-![oh really](img/pic/oreally.jpeg)
+
+![oh really](img/pic/oreally.jpeg)<!--.element height="500"-->
 
 Oh really?
 
 
+
 # Better alternative
+
 
 
 ```
@@ -719,37 +767,9 @@ Oh really?
 If `GOTO` is bad...
 
 
+
 # yet another language
 
-
-```
-XXXVII
-
-    DO .9 <- #16
-    DO .10 <- #0
-    DO .11 <- #1
-
-(1) PLEASE READ OUT .11
-    DO .1 <- .10
-    DO .2 <- .11
-    PLEASE (1009) NEXT
-    DO .10 <- .11
-    DO .11 <- .3
-
-    DO (3) NEXT
-    DO (1) NEXT
-
-(3) DO (4) NEXT
-    PLEASE GIVE UP
-
-(4) DO .1 <- .9
-    DO .2 <- #1
-    PLEASE (1010) NEXT
-    DO .9 <- .3
-    DO .1 <- '.9~.9'~#1
-    PLEASE (1020) NEXT
-    DO RESUME .1
-```
 
 
 # Intercal  (1972)
@@ -763,7 +783,9 @@ One of the first Esoteric Languages
 ![harddisk](img/pic/harddisk.jpeg)
 
 
+
 # and another programming language
+
 
 
 ```c
@@ -810,18 +832,21 @@ from https://www.geeksforgeeks.org/quick-sort/
  
 
 
+
 ## C (1969)
 
 - &#10084; os programing support(`*`)
 - &#10084; easy low level hardware use
 - &#10084; mixes easily with assembly
-- &#10084; portabilty
-- &#128169;  (void*) - and where is your type now
+- &#10084; portability
+- &#128169;  (void*) - where is your type now?
 - &#128169;  life is too short for malloc
 - &#128169;  limited (unfriendly) encapsulation
 
 
-# so another language
+
+# and another language
+
 
 
 ```
@@ -845,6 +870,7 @@ int main () {
 from http://www.cplusplus.com/reference/algorithm/sort/
 
 
+
 ## C++
 
 - &#10084; object oriented programming
@@ -860,7 +886,9 @@ from http://www.cplusplus.com/reference/algorithm/sort/
 # meanwhile in a hardware
 
 
-![network](img/pic/network.jpeg)
+
+![network](img/pic/network.jpeg)<!-- .element height="500"-->
+
 
 
 ```
@@ -886,6 +914,7 @@ public class ArrayListTest {
 ```
 
 
+
 ## Java (1996)
  
  - &#128540; breaks with C compatibility
@@ -894,9 +923,10 @@ public class ArrayListTest {
  - &#10084; garbage collection
  - &#10084; great standard library
  - &#10084; security
- - &#10084; better multithreading
+ - &#10084; better multi-threading
  - &#128169; try to code in  Java 1.2 for a one day
  
+
 
 
 # Reason 4
@@ -904,10 +934,9 @@ public class ArrayListTest {
 ![gratis](img/pic/gratis.jpg)
 
 
-![instruction](img/pic/eventoryOK.jpg)<!-- .element height="500" -->
-
 
 #  and now the most successful language ever
+
 
 
 ```
@@ -928,15 +957,18 @@ public class ArrayListTest {
 ```
 
 
+
 ![BE](img/pic/eich.png)
+
 
 
 ## JavaScript (1995)
 
  - &#10084; LISPy in core
  - &#128169; ugly in details/ bad parts
- - &#128540; Dynamicly typed
+ - &#128540; Dynamically typed
  - &#128169; wasted chance
+
 
 
 # Reason 5
@@ -950,6 +982,7 @@ Niche
 # Types of languages
 
 
+
 ## types
 
 - scripting languages vs compiled languages<!-- .element: class="fragment"--> 
@@ -957,10 +990,13 @@ Niche
 - strongly typed vs weakly typed<!-- .element: class="fragment"--> 
 
 
+
 ![types](img/pic/librarytp.png)
 
 
+
 ![types](img/pic/tpes.png)
+
 
 
 ![quality](img/pic/types.png)<!-- .element: height="500"-->
@@ -968,7 +1004,9 @@ Niche
 Less types more tests
 
 
+
 # Is there anything better?
+
 
 
 ```
@@ -980,6 +1018,7 @@ console.log(h +w + z)
 ```
 
 
+
 ## Scala (2003)
 
 - &#10084; FP, OOP hybrid<!-- .element: class="fragment"--> 
@@ -989,19 +1028,23 @@ console.log(h +w + z)
 - &#10084;  compiles to JS<!-- .element: class="fragment"--> 
 - &#10084;  strongly/statically typed without verbosity<!-- .element: class="fragment"--> 
 - &#128169; complex<!-- .element: class="fragment"--> 
-- &#128169; too complex?<!-- .element: class="fragment"-->
+
 
 
 # &#10084;  No semicolons ! 
 
 
+
 # meanwhile in a hardware
+
 
 
 ![multicore](img/pic/multicore.jpg)
 
 
+
 # another language
+
 
 
 ```
@@ -1015,6 +1058,7 @@ quicksort (x:xs) =
 ```
 
 
+
 # Haskell (1990)
 
  - &#10084;  functional
@@ -1026,12 +1070,14 @@ quicksort (x:xs) =
 #  JVM  languages 
 
 
+
 ## java problems (as of 2018)
 
 - ceremony
 - limited functional programming (mutability everywhere)
 - simple type system / limited generics
 - cluttered, frankenstein
+
 
 
 #  Alternative JVM Languages 
@@ -1047,7 +1093,7 @@ quicksort (x:xs) =
 # what do you think about yet another language?
 
 
-   
+
 ## Language
 
  - syntax
@@ -1057,13 +1103,16 @@ quicksort (x:xs) =
  - community!<!-- .element: class="fragment"--> 
 
 
+
 ## Reasons for new languages
+
 
 
 - productivity
 - hardware
 - ideas
 - bugs prevention 
+
 
 
 # Less bugs
@@ -1073,9 +1122,10 @@ quicksort (x:xs) =
 - GOTO spaghetti  -> C, Pascal
 - lack of encapsulation -> C++
 - dangling pointers  -> Java, C#
-- nullpointerexception -> Kotlin
+- NullPointerexception -> Kotlin
 - mutability -> Scala, Haskell 
 - concurrency problems -> Rust
+
 
 
 end of privacy
@@ -1083,11 +1133,13 @@ end of privacy
 for your code<!-- .element: class="fragment"--> 
 
 
+
 ## Compiler wants to know more
 
 `malloc()` - just function call in **C**
 
-`new A()` - you allocate object in **Java**
+`new A()` - allocate object in **Java**
+
 
 
 ## Compiler wants to know more
@@ -1097,11 +1149,13 @@ for your code<!-- .element: class="fragment"-->
 `synchronized( ){` - you declare critical section in **Java**
 
 
+
 ## Compiler wants to know more
 
 `public String s` -  shared variable in **Java**
 
 `let mut s = String::from("hello");` - you control  borrowing in **Rust**
+
 
 
 ## Better productivity
