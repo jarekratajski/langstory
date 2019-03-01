@@ -2,13 +2,6 @@
 
 
 
-![Engenius](img/pic/engenius.svg)
-
-Anarchitect at Engenius GmbH
-
-
-
-
 ![4programmers](img/pic/4programmers.png)
 4programmers.net
 
@@ -41,7 +34,7 @@ Anarchitect at Engenius GmbH
 
 
 ```basic
-10 PRINT "ZENEK JEST GUPI"
+10 PRINT "HELLO WORLD"
 20 PRINT
 30 GO TO 10
 
@@ -49,7 +42,11 @@ Anarchitect at Engenius GmbH
 
 
 
-## your favourite language now?
+## and your favourite language now?
+
+
+
+## your favourite language
 
 
 
@@ -90,7 +87,7 @@ song in 1500 different programming languages ...
 
 
 
-# let's start with a hardware
+# let's start with hardware
 
 
 
@@ -137,7 +134,7 @@ first program ever?
 
 
 
-# computers! computers! computers!
+# first computers!
 
 
 
@@ -205,7 +202,7 @@ a8 a9 00 20 91 b3 20 dd bd a9 00 a0 01 20 1e ab 60
 - &#10084; Simple to learn
 - &#128169; Conditional branches / loops are hard to calculate
 - &#128169; Hard(?) to remember opcodes (150 opcodes on 6510, \>4k opcodes on i7!  )
-- &#128169; lots of mechanical/boring job
+- &#128169; coding assembly == lots of mechanical/boring job
 - &#128169; hard to program
 
 
@@ -504,7 +501,7 @@ Reality
 
 
 
-![Disappointment](img/pic/disappointment.gif)<!-- .element width="1000" -->
+![Disappointment](img/pic/disappointment.gif)
 
 
 
@@ -611,7 +608,6 @@ AND fibonacci(n) = n<2 -> 1, fibonacci(n-1)+fibonacci(n-2)
 # BASIC (1964)
 
 
-
 # BASIC 
 
 - &#10084; Programming for the masses
@@ -647,7 +643,48 @@ AND fibonacci(n) = n<2 -> 1, fibonacci(n-1)+fibonacci(n-2)
 
 
 
-# Everybody BASIC
+## Everybody BASIC
+
+
+
+## Commodore wanted basic
+
+![ms](img/pic/commodore.jpg)
+
+
+
+# The deal
+
+Microsoft wanted $3 for each Commodore computer sold with BASIC in ROM
+
+
+
+![Bill](img/pic/bgates.jpg)<!-- .element height="400px"-->
+![Jack](img/pic/tramiel.jpeg)<!-- .element height="400px"-->
+
+(from https://tech.wp.pl/internet-commodore-i-atari-nie-powstalyby-bez-polakow-6035074860253825g/2)
+
+
+
+Microsoft got $25 000 for  perpetual licence for<!-- .element: class="fragment"--> 
+
+all Commodore 65xx based machines <!-- .element: class="fragment"--> 
+
+
+
+Commodore sold ~ 20 mln of C64 machines
+ 
+ and few millions of others
+
+
+
+Angry Bill Gates inserted an easter egg in machine code...
+
+[Commodore Pet](https://www.masswerk.at/pet/)
+
+
+
+# Era of BASIC 
 ## 1977-1995
 
 
@@ -706,7 +743,7 @@ Prevent errors
 
 ## Structural programming
 
-impossible  to create spaghetti code
+Makes impossible  to create spaghetti code
 
 
 
@@ -716,11 +753,34 @@ Oh really?
 
 
 
+# Better alternative
+
+
+
+```
+10 COMEFROM 40
+20 INPUT "WHAT IS YOUR NAME? "; A$
+30 PRINT "HELLO, "; A$
+40 REM
+```
+
+If `GOTO` is bad...
+
+
+
+# yet another language
+
+
+
+# Intercal  (1972)
+
+One of the first Esoteric Languages
+
+
+
 # meanwhile in a hardware
 
-
-
-![harddisk](img/pic/harddisk.jpeg)<!-- .element height="400"-->
+![harddisk](img/pic/harddisk.jpeg)
 
 
 
@@ -919,6 +979,61 @@ Niche
 
 
 
+# Types of languages
+
+
+
+## types
+
+- scripting languages vs compiled languages<!-- .element: class="fragment"--> 
+- dynamically typed vs statically typed<!-- .element: class="fragment"--> 
+- strongly typed vs weakly typed<!-- .element: class="fragment"--> 
+
+
+
+![types](img/pic/librarytp.png)
+
+
+
+![types](img/pic/tpes.png)
+
+
+
+![quality](img/pic/types.png)<!-- .element: height="500"-->
+ 
+Less types more tests
+
+
+
+# Is there anything better?
+
+
+
+```
+var h = "Hello, "
+var w = "World!"
+var z = h.length() + w.length()
+console.log(h +w + z)
+
+```
+
+
+
+## Scala (2003)
+
+- &#10084; FP, OOP hybrid<!-- .element: class="fragment"--> 
+- &#10084;  type inference<!-- .element: class="fragment"--> 
+- &#10084; favors immutability<!-- .element: class="fragment"--> 
+- &#10084;  compiles to JVM<!-- .element: class="fragment"--> 
+- &#10084;  compiles to JS<!-- .element: class="fragment"--> 
+- &#10084;  strongly/statically typed without verbosity<!-- .element: class="fragment"--> 
+- &#128169; complex<!-- .element: class="fragment"--> 
+
+
+
+# &#10084;  No semicolons ! 
+
+
 
 # meanwhile in a hardware
 
@@ -956,382 +1071,210 @@ quicksort (x:xs) =
 
 
 
+## java problems (as of 2018)
+
+- ceremony
+- limited functional programming (mutability everywhere)
+- simple type system / limited generics
+- cluttered, frankenstein
+
+
+
+#  Alternative JVM Languages 
+
 - groovy (powerful, no ceremony, fp)<!-- .element: class="fragment"-->
 - clojure (lisp, fp)<!-- .element: class="fragment"-->
 - scala (everything :-) )<!-- .element: class="fragment"-->
 - kotlin (scala--  \/ java++)<!-- .element: class="fragment"-->
 - eta (haskell)<!-- .element: class="fragment"-->
-- many more<!-- .element: class="fragment"-->
 
 
 
-![polyglot](img/pic/polyglot.png)
+# what do you think about yet another language?
 
 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/OO3FANjwKHY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+## Language
 
-who would  need that?
-
-
-
-![types](img/pic/librarytp.png)
-
-
-
-![types](img/pic/tpes.png)
+ - syntax
+ - semantics<!-- .element: class="fragment"--> 
+ - library<!-- .element: class="fragment"-->
+ - tools<!-- .element: class="fragment"-->  
+ - community!<!-- .element: class="fragment"--> 
 
 
 
-![quality](img/pic/types.png)<!-- .element: height="500"-->
- 
-Less types more tests
-Note: Where do You think is java?
+## Reasons for new languages
 
 
 
-# CODE
+- productivity
+- hardware
+- ideas
+- bugs prevention 
 
 
 
-```java
-Person person = findPerson();
-if ( person != null) {
-    if (person.department != null ) {
-        peron.department.head = managersPool.getManager()
+# Less bugs
+
+ problem -> solution
+- opcode errors  -> asm 
+- GOTO spaghetti  -> C, Pascal
+- lack of encapsulation -> C++
+- dangling pointers  -> Java, C#
+- NullPointerexception -> Kotlin
+- mutability -> Scala, Haskell 
+- concurrency problems -> Rust
+
+
+
+end of privacy
+
+for your code<!-- .element: class="fragment"--> 
+
+
+
+## Compiler wants to know more
+
+`malloc()` - just function call in **C**
+
+`new A()` - allocate object in **Java**
+
+
+
+## Compiler wants to know more
+
+`Semaphore.lock()` - just a method call in **C++**
+
+`synchronized( ){` - you declare critical section in **Java**
+
+
+
+## Compiler wants to know more
+
+`public String s` -  shared variable in **Java**
+
+`let mut s = String::from("hello");` - you control  borrowing in **Rust**
+
+
+
+## Better productivity
+
+Less ceremony, just do it
+
+- simple maths -> Fortran
+- easier algorithms -> Algol
+- faster prototyping -> Visual Basic
+- data processing -> Python
+
+
+
+## Hardware possibilities
+
+- limited mem -> asm, cobol, fortran
+- faster cpu -> Pascal, C
+- more memory -> C++, Java
+- network / multicore -> Scala, Haskell     
+
+
+
+![cyclew](img/pic/teufelkreis.png)<!-- .element: height="500"-->
+
+
+
+# For You
+
+
+
+Languages are there not to destroy your life
+
+
+
+## Language changes the way you think
+
+
+
+```
+//A piece of smart code in Players should reduce both methods code duplication
+    private Tuple2<Ball, Players> bouncePlayer1(final Players players, final Random rnd) {
+        if (this.x < 0 && speed.x < 0) {
+            if (isTouchingPaddle(players.player1.paddle, this.y)) {
+                return Tuple.of(new Ball(0f, this.y, this.speed.bounceX()), players);
+            } else {
+                return Tuple.of(Ball.randomDirection(rnd), players.mapPlayer(2, pl2 -> pl2.score()));
+            }
+        }
+        return Tuple.of(this, players);
     }
-}
-```
 
-Java
-
-
-
-```kotlin
-val person:Person? = findPerson()
-
-person?.department?.head = managersPool.getManager()
-```
-
-Kotlin
-
-
-
-```java
-@NoArgsConstructor
-@AllArgsConstructor
-@Getter @Setter
-@Builder
-public class Account {
-    private String id;
-    private String name;
-    private BigDecimal amount;
-}
-
-```
-
-Java/Lombok
-
-
-
-![Java](img/pic/javamonitor.jpg)
-
-Plain Java version
-
-
-
-```kotlin
-data class Account (
-    private val id:String,
-    private val name:String,
-    private amount:BigDecimal
-) {
-
-}
-```
-
-Kotlin
-
-
-
-If you use lombok today You just write kotlin using ugly syntax
-
-
-
-![Lombok](img/pic/eyesbleeding.jpg)
-
-My very balanced opinion on Lombok
-
-
-
-```java
-class A {
-   private String s = "someText";
-   private final B b;
-   
-   private R m(Arg a) {
-       var x = a + Arg(7);
-       return x.toR();
-   }
-}
-```
-
-var in java
-
-
-
-```java
-class A(private val b:B) {
-   val s = "someText"
-   private final B b;
-   
-   fun m(a:Arg):R {
-       val x = a + Arg(7)
-       return x.toR()
-   }
-}
-```
-
-val in Kotlin
-
-
-
-```java
-public void noblock(String name) {
-        ws
-                .findUserByName(name)
-                .flatMap(user -> db
-                        .contains(user.getSsn())
-                        .filter(contains -> contains)
-                        .map(contains -> user)
-                        .switchIfEmpty(db.save(user))
-                )
-                .flatMap(user -> loadCart(user)
-                        .collectList()
-                        .flatMap(cart -> {
-                            double total = cart.stream()
-                                    .mapToDouble(Item::getPrice)
-                                    .sum();
-                            return pay(total)
-                                    .map(uuid -> Pair.of(cart, uuid));
-                        }))
-                .flatMapMany( pair -> Flux
-                        .fromIterable(pair.getFirst())
-                        .map(item -> Pair.of(item, pair.getSecond())))
-                .flatMap((Pair<Item, UUID> pair) -> sendEmail(pair.getFirst(), pair.getSecond()));
-
+    private Tuple2<Ball, Players> bouncePlayer2(final Players players, final Random rnd) {
+        if (this.x > 1.0f && speed.x > 0) {
+            if (isTouchingPaddle(players.player2.paddle, this.y)) {
+                return Tuple.of(new Ball(1f, this.y, this.speed.bounceX()), players);
+            } else {
+                return Tuple.of(Ball.randomDirection(rnd), players.mapPlayer(1, pl1 -> pl1.score()));
+            }
+        }
+        return Tuple.of(this, players);
     }
 ```    
 
 
 
-```scala
-def doIt(name: String): Flux[String] = {
-      val paid: Mono[(java.util.List[Item], UUID)] = for {
-        user <- ws.findUserByName(name)
-        contains <- db.contains(user.getSsn)
-        persistentUser <- if (!contains) db.save(user) else Mono.just(user)
-        cart <- loadCart(persistentUser)
-        total <- Mono.just(cart.stream().mapToDouble(_.getPrice).sum())
-        uuid <- pay(total)
-      } yield ((cart, uuid))
+## Be brave
+ 
+ In your companies you do:
+  - prototypes,
+  - dev/build/report tools,
+  - hackatons
+  - trainings
 
-      for {
-          allPaidItems <- paid.flux()
-          paidItem <- Flux.fromIterable(allPaidItems._1)
-          sent <- sendEmail(paidItem, allPaidItems._2)
-      } yield (sent)
 
-    }
-```
 
+Why waste time doing exercises in the same language You work.   
 
 
-```java
 
-interface EventHandler<AGGREGATE, EVENT> {
-    AGGREGATE handle(AGGREGATE before, EVENT event);
-}
+## Don't be afraid of 
 
-```
 
 
+## Dead languages
 
-```java
 
-class MyHandler extends EventHandler<MyAggr, MyEvent> {
-    public MyAggr handle(MyAgg before, MyEvent event) {
-        Random.nextInt();
-        LocalData.now();
-        Files.new... .
-    }
-}
 
-```
+Languages never die - they only fade away
 
-Oops!
 
 
+Or turn `zombies`
 
-```haskell
-MyHandler::MyAggr->MyEvent->MyAggr
 
-date :: IO (Integer,Int,Int) -- :: (year,month,day) 
-```
 
-Haskell
+Recent COBOL specification was released 2016
 
 
 
-# Languages change the way you think
+There is COBOL on Wheelchairs
 
 
 
-![Innuites](img/pic/Igloos.jpg)<!-- .element height="500"-->
+## What comes next?
 
 
 
-They have 400 different words for **a snow**
+ - AI<!-- .element: class="fragment"--> 
+ - 256 cores<!-- .element: class="fragment"--> 
+ - more GPU<!-- .element: class="fragment"--> 
+ - FPGAs?<!-- .element: class="fragment"--> 
+ - IOT<!-- .element: class="fragment"--> 
+ - security<!-- .element: class="fragment"--> 
+ - privacy<!-- .element: class="fragment"--> 
 
-Most of them cultural people do say loud<!-- .element: class="fragment"-->
 
 
+# THE end
 
-# Remember world without mobile phones?
 
 
-
-It would be hard to live in such a world now
-
-
-
-You do not know you are suffering
-
-
-
-<!-- .slide: data-transition="zoom" -->
-![Love Java](img/pic/lovejava.png)<!-- .element width="600" -->
-
-
-
-
-<!-- .slide: data-transition="zoom" -->
-![Love Java](img/pic/lovejava2.png)<!-- .element width="600" -->
-
-
-
-<!-- .slide: data-transition="zoom" -->
-![Love Java](img/pic/lovejava3.png)<!-- .element width="600" -->
-
-
-
-![select](img/pic/select.jpg)
-
-
-
-![go](img/pic/go.jpg)
-
-
-
-![Master of one](img/pic/prod_to_xp.png)
-
-Mastering one language
-
-
-
-![Master of two](img/pic/prod_to_xp2.png)
-
-Mastering second language
-
-
-
-
-Try on a small scale first
-
-- prototypes
-- trainings
-- hackatons
-- open source projects
-
-
-
-
-If you spend more than 5 years in one language... this is probably too much
-
-
-
-
-Learn DIFFERENT language
-
-
-
-C# does not differ from java
-
-
-
-# Architects?
-
-
-
-Remember Grace Hopper?
-
-
-
-It's easier to ask forgiveness than it is to get permission
-
-
-
-# ultimate language?
-
-
-
-Nope
-
-Probably
-
-
-
-![cyclew](img/pic/teufelkreis2.png)<!-- .element height="500"-->
-
-Does it ever end?
-
-
-
-![IQuit](img/pic/quit.jpg)<!-- .element width="1000" -->
-
-
-
-OK!
-
-
-
-Please, do a maintenance then :-)
-
-
-
-
-Brave, selfish, early adopters...
-
-
-
-Help the others
-
-
-
-- organize trainings
-- make talks
-- learn about problems
-
-
-
-# Enough
-
-
-
-New languages are there to let you have a longer **weekends**
-
-You can finish your job earlier and make sure that the production still works
-
-
-
-# Questions?
+# THE end
